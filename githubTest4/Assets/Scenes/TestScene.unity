@@ -353,7 +353,6 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
-  - component: {fileID: 330585548}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -480,20 +479,6 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
---- !u!114 &330585548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330585543}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e32831853a7ea524ca79f6275501a8b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FirstPersonCameraRotation
-  sensitivity: 2
-  yRotationLimit: 88
 --- !u!1 &407002574
 GameObject:
   m_ObjectHideFlags: 0
@@ -967,7 +952,6 @@ GameObject:
   - component: {fileID: 1748169829}
   - component: {fileID: 1748169830}
   - component: {fileID: 1748169831}
-  - component: {fileID: 1748169832}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1138,8 +1122,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::newMoveScript
   moveSpeed: 5
-  jumpStr: 8
-  gravity: 1
+  jumpStr: 10
+  gravity: 0.1
 --- !u!114 &1748169831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1147,28 +1131,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1748169822}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c2fb5f1c7b6819c48a83ee39dd7da684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::cameraScript
-  mouseSensitivity: 2
-  yCamLimit: 90
+  mouseSens: 20
+  yLimit: 89
   cam: {fileID: 330585543}
---- !u!114 &1748169832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1748169822}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e32831853a7ea524ca79f6275501a8b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FirstPersonCameraRotation
-  sensitivity: 2
-  yRotationLimit: 88
 --- !u!1 &2014962517
 GameObject:
   m_ObjectHideFlags: 0
